@@ -1,10 +1,11 @@
 {
   "name": "rduk-cache",
   "version": "0.0.1",
-  "description": "cache provider\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dnode app \u001b[C\u001b[C\u001b[C\u001b[2~\u001b[lication cache provider",
+  "description": "cache provider",
   "main": "lib/cache.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "jshint lib/*.js lib/**/*.js",
+    "test": "npm run lint"
   },
   "keywords": [
     "cache",
@@ -16,5 +17,8 @@
     "rduk-configuration": "1.0.2",
     "rduk-errors": "1.2.3",
     "rduk-provider": "0.1.3"
+  },
+  "devDependencies": {
+    "jshint": "2.9.5"
   }
 }
