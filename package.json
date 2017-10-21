@@ -1,6 +1,6 @@
 {
   "name": "rduk-cache",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "cache provider",
   "main": "lib/cache.js",
   "scripts": {
