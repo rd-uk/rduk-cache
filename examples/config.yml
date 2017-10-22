@@ -1,0 +1,7 @@
+---
+cacheStore:
+  default: simple
+  providers:
+    -
+      name: simple
+      type: ../../../examples/simpleCacheStoreProvider
