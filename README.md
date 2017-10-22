@@ -21,11 +21,28 @@ npm install rduk-cache-store-redis --save --save-exact
 
 ### How to use
 
+#### cache store configuration
+
+1. Add a `config.yml` file to your app ([more information](https://github.com/rd-uk/rduk-configuration))
+1. Add a `cacheStore` section (see below for redis configuration)
+
+```yaml
+---
+cacheStore:
+    name: redis
+    providers:
+        -
+            name: redis
+            type: rduk-cache-store-redis
+            url: redis://...
+
+```
+
 ```js
 var cache = require('rduk-cache');
 ```
 
-#### set
+#### Promise set(key, value)
 
 ```js
 cache.set('key', {
@@ -34,7 +51,7 @@ cache.set('key', {
 })
 ```
 
-#### get
+#### Promise get(key)
 
 ```js
 cache.get('key')
