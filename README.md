@@ -7,7 +7,7 @@ Manage cache in your Node.js app
 
 ## Installation
 
-```
+```sh
 # install rduk-cache module
 npm install rduk-cache --save --save-exact
 
@@ -37,6 +37,8 @@ cacheStore:
             url: redis://...
 
 ```
+
+# module loading
 
 ```js
 var cache = require('rduk-cache');
