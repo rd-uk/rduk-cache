@@ -38,7 +38,7 @@ cacheStore:
 
 ```
 
-# module loading
+#### module loading
 
 ```js
 var cache = require('rduk-cache');
