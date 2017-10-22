@@ -9,12 +9,20 @@
     "test": "istanbul cover node_modules/jasmine/bin/jasmine.js --report cobertura",
     "posttest": "rm -rf ./config*yml && istanbul report && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rd-uk/rduk-cache.git"
+  },
   "keywords": [
     "cache",
     "provider"
   ],
   "author": "Kim Ung",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rd-uk/rduk-cache/issues"
+  },
+  "homepage": "https://github.com/rd-uk/rduk-cache#readme",
   "dependencies": {
     "rduk-configuration": "1.0.4",
     "rduk-errors": "1.2.3",
